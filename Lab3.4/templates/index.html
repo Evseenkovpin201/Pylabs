@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Mortgage Calculator</title>
+</head>
+<body>
+ <h1>Mortgage Calculator</h1>
+ <form method="POST" action="{{url_for('calculate')}}">
+  <label>Сумма займа:</label>
+  <input type="number" name="amount"><br><br>
+  <label>Процентная ставка:</label>
+  <input type="number" step="any" name="rate"><br><br>
+  <label>Срок кредита (in years):</label>
+  <input type="number" name="time"><br><br>
+  <input type="submit" value="Рассчитать"><br><br>
+ </form>
+</body>
+</html>
